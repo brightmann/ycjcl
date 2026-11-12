@@ -29,7 +29,6 @@ pnpm-debug.log*
 # build-time generated assets
 public/pagefind/
 public/img/
-content/
 
 # translation cache
 .translate-cache.json
