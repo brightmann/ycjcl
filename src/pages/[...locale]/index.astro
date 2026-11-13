@@ -1,7 +1,9 @@
 ---
+import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import Card from "@/components/Card.astro";
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
+import LinkButton from "@/components/LinkButton.astro";
 import Hr from "@/components/Hr.astro";
 import { SITE } from "@/config";
 import { DEFAULT_LOCALE, SUPPORTED_LOCALES } from "@/i18n/config";
@@ -67,6 +69,12 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       )
     }
 
+    <div class="my-8 text-center">
+      <LinkButton href="/posts/">
+        {t("allPosts")}{" "}
+        <IconArrowRight class="inline-block rtl:rotate-180" />
+      </LinkButton>
+    </div>
   </main>
   <Footer />
 </Layout>
