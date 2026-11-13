@@ -4,8 +4,8 @@ export const SITE = {
   profile: "https://github.com/ycjcl868",
   ogImage: "",
   lightAndDarkMode: true,
-  postPerIndex: 6,
-  postPerPage: 8,
+  postPerIndex: 3,
+  postPerPage: 5,
   showArchives: true,
   showBackButton: true, // show back button in post detail
   editPost: {
